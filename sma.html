@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Research on Multi-Agent Systems - Guillaume Touya's webpage</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+
+  <!-- Custom styles for this template -->
+  <link href="css/animate.css" rel="stylesheet">
+  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <link href="css/resume.css" rel="stylesheet">
+
+  <!-- scripts on load -->
+  <script src="vendor/d3/d3.min.js"></script>
+  <script src="js/reviewing.js" charset="utf-8"></script>
+    <script src="js/hal.js" charset="utf-8"></script>
+
+</head>
+
+<body id="page-top" onload="getKeywordPublicationsAuthor('guillaume-touya','SMA');">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <select class="selectpicker" data-width="fit">
+      <option data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>
+      <option  data-content='<span class="flag-icon flag-icon-fr"></span> Français'>Français</option>
+    </select>
+    <a class="nav-link text-muted subheading lang-en" href="https://umrlastig.github.io/geovis">GEOVIS Team</a>
+    <a class="nav-link text-muted subheading lang-fr" href="https://umrlastig.github.io/geovis">Equipe GEOVIS</a>
+    <a class="nav-link text-muted subheading lang-en" href="index.html">Main page</a>
+    <a class="nav-link text-muted subheading lang-fr" href="index.html">Page principale</a>
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none">Guillaume Touya</span>
+      <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/touya.png" alt="">
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger lang-en" href="#about">About</a>
+          <a class="nav-link js-scroll-trigger lang-fr" href="#about">Principes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger lang-en" href="#past">Past research at IGN France</a>
+          <a class="nav-link js-scroll-trigger lang-fr" href="#past">Recherches passées à l'IGN</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger lang-en" href="#collagen">CollaGen</a>
+          <a class="nav-link js-scroll-trigger lang-fr" href="#collagen">CollaGen</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger lang-en" href="#diogen">DIOGEN</a>
+          <a class="nav-link js-scroll-trigger lang-fr" href="#diogen">DIOGEN</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger lang-en" href="#cartagen">CartAGen</a>
+          <a class="nav-link js-scroll-trigger lang-fr" href="#cartagen">CartAGen</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger lang-en" href="#publications">Publications</a>
+          <a class="nav-link js-scroll-trigger lang-fr" href="#publications">Publications</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid p-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+      <div class="w-100">
+        <h1 class="mb-0 lang-en">My research on
+          <span class="text-primary lang-en">Multi-Agent Systems</span> for Map Generalisation
+        </h1>
+        <h1 class="mb-0 lang-fr">Mes recherches sur
+          <span class="text-primary lang-fr">les SMA</span> pour la généralisation cartographique
+        </h1>
+
+      <p class="lead mb-5 lang-en">Since the seminal PhD from Anne Ruas, solving the automation of map generalization with multi-agent systems (MAS) is the main research paradigm at IGN France (see this <a href="generalisation.html">page</a> to learn more on my generalisation research).
+        At the date of my arrival at IGN in 2004, agents were everywhere in generalization, and they were a part of my early research. This page first shows principles of past research on MAS for generalisation, and then describes my contribution:
+       the CollaGen model from my PhD research, the DIOGEN model from Adrien Maudet's PhD research (I was co-supervisor), and the CartAGen open source platform.</p>
+      <p class="lead mb-5 lang-fr">Depuis la thèse d'Anne Ruas, l'approche adoptée à l'IGN pour automatiser la générélisation cartographique est d'utiliser le principe des systèmes multi-agents (SMA) (cette page <a href="generalisation.html">page</a> sur la généralisation en général si nécessaire).
+        A mon arrivée en recherche à l'IGN en 2004, les agents étaient partout en généralisation, et ils ont constitué naturellement une grande partie de mes premières recherches. Cette page présente d'abord quelques principes issues des recherches de l'IGN sur le sujet, puis décrit mes propres contributions :
+       le modèle CollaGen issu de mes travaux de thèse, le modèle DIOGEN issu de la thèse d'Adrien Maudet (co-encadrée avec Cécile Duchêne et Sébastien Picault), et la plateforme de recherche ouverte CartAGen.</p>
+    </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="past">
+      <div class="w-100">
+        <h2 class="mb-5 lang-en">Past research at IGN France</h2>
+        <h2 class="mb-5 lang-fr">Recherches passées à l'IGN</h2>
+        <hr class="star-dark mb-5">
+        <div class="row">
+          <article class="col-md-6 col-lg-4">
+								<div class="portfolio-item d-block mx-auto">
+									<img class="img-fluid" src="img/generalisation.png" alt="" />
+									<div class="portfolio-desc d-flex align-center position-absolute h-100 w-100">
+										<div class="folio-info my-auto w-100 text-center">
+											<a href="" class="fancybox"><i class="fas fa-search-plus fa-3x"></i></a>
+										</div>
+									</div>
+								</div>
+          </article>
+          <div class="col-md-6 col-lg-4">
+                <div class="portfolio-item d-block mx-auto">
+                  <img class="img-fluid" src="img/agents.png" alt="" />
+                  <div class="portfolio-desc align-center position-absolute h-100 w-100">
+                    <div class="folio-info w-100 text-center">
+                      <a href="" class="fancybox"><i class="fas fa-search-plus fa-3x"></i></a>
+                    </div>
+                  </div>
+                </div>
+          </div>
+          <article class="col-md-6 col-lg-4">
+                <div class="portfolio-item d-block mx-auto">
+                  <img class="img-fluid" src="img/vgi.png" alt="" />
+                  <div class="portfolio-desc d-flex align-center position-absolute h-100 w-100">
+                    <div class="folio-info my-auto w-100 text-center">
+                      <h5 class="lang-en">Volunteered Geographic Information</h5>
+                      <h5 class="lang-fr">Information géographique volontaire</h5>
+                    </div>
+                  </div>
+                </div>
+          </article>
+          <div class="col-md-6 col-lg-4">
+                <div class="portfolio-item d-block mx-auto">
+                  <img class="img-fluid" src="img/zoom.png" alt="" />
+                  <div class="portfolio-desc align-center position-absolute h-100 w-100">
+                    <div class="folio-info w-100 text-center">
+                      <h5 class="lang-en">Interactions in multi-scale maps</h5>
+                      <h5 class="lang-fr">Interactions dans les cartes multi-échelles</h5>
+                    </div>
+                  </div>
+                </div>
+          </div>
+          <article class="col-md-6 col-lg-4">
+                <div class="portfolio-item d-block mx-auto">
+                  <img class="img-fluid" src="img/lod.png" alt="" />
+                  <div class="portfolio-desc d-flex align-center position-absolute h-100 w-100">
+                    <div class="folio-info my-auto w-100 text-center">
+                      <h5 class="lang-en">Scale and LOD issues in geovisualization</h5>
+                      <h5 class="lang-fr">échelle et niveau de détail en géovisualisation</h5>
+                    </div>
+                  </div>
+                </div>
+          </article>
+          <div class="col-md-6 col-lg-4">
+                <div class="portfolio-item d-block mx-auto">
+                  <img class="img-fluid" src="img/auto_carto.png" alt="" />
+                  <div class="portfolio-desc align-center position-absolute h-100 w-100">
+                    <div class="folio-info w-100 text-center">
+                      <h5 class="lang-en">Automated cartography: text placement, schematization, conflation</h5>
+                      <h5 class="lang-fr">Cartographie automatique: placement de texte, schématisation, recalage géométrique</h5>
+                    </div>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="collagen">
+      <div class="w-75">
+        <h2 class="mb-5">CollaGen</h2>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#news1" data-slide-to="0" class="active"></li>
+            <li data-target="#news2" data-slide-to="1"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/news_abs19.png" class="d-block w-75" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Workshop on Abstraction, Scale, and Perception</h5>
+                <p><strong>I co-organize the workshop on Abstraction, Scale, and Perception in Tokyo on 15 July 2019 prior to ICC'19. <a href="https://icc2019abstraction.wordpress.com/">Read more...</a></strong></p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/news_deep.png" class="d-block w-75" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>New paper in IJC</h5>
+                <p>The paper entitled "Is Deep Learning the New AGENT for Map Generalisation?" has just been published in the <a href="https://www.tandfonline.com/doi/abs/10.1080/23729333.2019.1613071">International Journal of Cartography</a>.</p>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section id="diogen" class="section appear clearfix">
+      <div class="container mar-bot50">
+        <div class="row mar-bot40">
+          <div class="col-lg-12 text-center">
+              <h2 class="section-heading">DIOGEN</h2>
+              <h3 class="section-subheading text-muted mb-5 lang-en">PhD thesis by Adrien Maudet, co-supervised with Cécile Duchêne and Sébastien Picault</h3>
+              <h3 class="section-subheading text-muted mb-5 lang-fr">Thèse d'Adrien Maudet, co-encadrée avec Cécile Duchêne et Sébastien Picault</h3>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="timeline">
+              <li>
+                <div class="timeline-image">
+                  <img class="img-circle img-responsive" src="" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>10-09-2004</h4>
+                    <h4 class="subheading">Research assistant</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">I start working at IGN France as a research assistant in the COGIT research team, assisting Cécile Duchêne and Anne Ruas on map generalisation.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img class="img-circle img-responsive" src="" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>01-01-2008</h4>
+                    <h4 class="subheading">PhD student</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">My PhD, <a href="http://recherche.ign.fr/labos/cogit/pdf/THESES/TOUYA/theseTouya.pdf">obtained in June 2011</a>, was supervised by Cécile Duchêne and Anne Ruas, and dealt with collaborative map generalisation.</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-image">
+                  <img class="img-circle img-responsive" src="" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>01-07-2011</h4>
+                    <h4 class="subheading">Senior researcher at COGIT research team, IGN</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">After my PhD, I become a senior researcher, still in COGIT team, at IGN France. I'm part of the group on automated cartography and geovisualization.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img class="img-circle img-responsive" src="" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>04-05-2017</h4>
+                    <h4 class="subheading">Habilitation defense</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">Defense of my <a href="http://recherche.ign.fr/labos/cogit/pdf/HDR/hdr-touya-2017.pdf">habilitation (HDR)</a> in GI science, which allows in France to be the main supervisor of PhD students.</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-image">
+                  <img class="img-circle img-responsive" src="" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>15-07-2017</h4>
+                    <h4 class="subheading">Head of COGIT research team</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">I take over the leadership if the COGIT research team from Sébastien Mustière.</a></p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img class="img-circle img-responsive" src="" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>01-09-2018</h4>
+                    <h4 class="subheading">Vice-head of LASTIG lab</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">I become the vice-head of the new <a href="http://umrlastig.github.io/website">LASTIG lab.</a></p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="cartagen">
+      <div class="w-100">
+        <h2 class="mb-5">CartAGen</h2>
+        <img class="img-circle img-responsive mb-5" src="img/icons/cartagen_logo.png" alt="">
+        <p class="text-muted lang-en"><a href="https://github.com/IGNF/CartAGen">CartAGen</a> is an open research platform for map generalisation. Developed in Java, it derives from the GeOxygene platform plugin we were previously developing.
+        CartAGen contains complete or partial implementations of the AGENT, CartACom, GAEL, DIOGEN, and CollaGen models.
+        You can find documentation on the platform <a href="https://ignf.github.io/CartAGen/">here</a>, and the code on <a href="https://github.com/IGNF/CartAGen">Github</a>.</p>
+        <p class="text-muted lang-fr"><a href="https://github.com/IGNF/CartAGen">CartAGen</a> est une plateforme de recherche libre pour la généralisation cartographique. Développée en Java, elle dérive du plugin de GeOxygene (non libre) sur lequel notre équipe travaillait avant.
+          CartAGen contient des implémentations complètes ou partielles des modèles AGENT, CartACom, GAEL, DIOGEN, et CollaGen.
+          Vous trouverez de la documentation sur la plateforme <a href="https://ignf.github.io/CartAGen/">ici</a>, et le code sur <a href="https://github.com/IGNF/CartAGen">Github</a>.</p>
+
+
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="publications">
+      <div class="w-100">
+        <h2 class="mb-5">Publications</h2>
+
+        <ol id="pub" class="sub">
+        </ol>
+
+      </div>
+    </section>
+
+
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/jquery.isotope.min.js"></script>
+  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/resume.js"></script>
+
+</body>
+
+</html>
